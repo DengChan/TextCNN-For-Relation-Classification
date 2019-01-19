@@ -19,24 +19,24 @@ To make the actual algorithm clear, I would like to present you this picture:
 * scikit-learn
 
 #### File Organize
-┃━ SemEval2010_task8_all_data
-&emsp;&emsp;┃━ SemEval2010_task8_training
-&emsp;&emsp;&emsp;&emsp;┃━ TRAIN_FILE.TXT
-&emsp;&emsp;&emsp;&emsp;┃━ TRAIN_TEST_DISTRIB.TXT
-┃━  runs
-&emsp;&emsp;┃━ 1547716564(timestap)
-&emsp;&emsp;&emsp;&emsp;┃━ checkpoints
-&emsp;&emsp;&emsp;&emsp;┃━ summaries
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ summaries
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ train
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ dev
-┃━  configure.py
-┃━  data_helpers.py
-┃━  model.py
-┃━  configure.py
-┃━  train.py
-┃━  utils.py
-┃━  GoogleNews-vectors-negative300.bin
+┃━ SemEval2010_task8_all_data  
+&emsp;&emsp;┃━ SemEval2010_task8_training  
+&emsp;&emsp;&emsp;&emsp;┃━ TRAIN_FILE.TXT  
+&emsp;&emsp;&emsp;&emsp;┃━ TRAIN_TEST_DISTRIB.TXT  
+┃━  runs  
+&emsp;&emsp;┃━ 1547716564(timestap)  
+&emsp;&emsp;&emsp;&emsp;┃━ checkpoints  
+&emsp;&emsp;&emsp;&emsp;┃━ summaries  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ summaries  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ train  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;┃━ dev  
+┃━  configure.py  
+┃━  data_helpers.py  
+┃━  model.py  
+┃━  configure.py  
+┃━  train.py  
+┃━  utils.py  
+┃━  GoogleNews-vectors-negative300.bin  
 
 #### Train
 * The train data is located in "SemEval2010_task8_all_data/SemEval2010_task8_training/TRAIN_FILE.TXT".
