@@ -14,12 +14,12 @@ def parse_args():
                         type=int, help="Max sentence length in data")
     parser.add_argument("--dev_sample_percentage", default=0.1,
                         type=float, help="Percentage of the training data to use for validation")
-    parser.add_argument("--text_tokenizer_path", default="runs/1547717767/text_tokenizer.json",
+    parser.add_argument("--text_tokenizer_path", default=None,
                         type=str, help="Path of text tokenizer")
-    parser.add_argument("--pos_tokenizer_path", default="runs/1547717767/pos_tokenizer.json",
+    parser.add_argument("--pos_tokenizer_path", default=None,
                         type=str, help="Path of position tokenizer")
 
-    # 训练
+    # Train
     parser.add_argument("--batch_size", default=128,
                         type=int, help="Batch Size (default: 32)")
     parser.add_argument("--num_epochs", default=100,
@@ -61,7 +61,7 @@ def parse_args():
     parser.add_argument("--gpu_allow_growth", default=True,
                         type=bool, help="Allow gpu memory growth")
     # Testing parameters
-    parser.add_argument("--checkpoint_dir", default="runs/1547717767/checkpoints",
+    parser.add_argument("--checkpoint_dir", default=None,
                         type=str, help="Checkpoint directory from training run")
 
     if len(sys.argv) == 0:
